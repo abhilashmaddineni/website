@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Brizitrix Team - Coming Soon. An innovative team preparing something amazing for you.">
+    <meta name="keywords" content="Brizitrix, coming soon, launch, innovation">
+    <meta name="author" content="Brizitrix Team">
+    <title>Brizitrix Team - Coming Soon</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <div class="container">
+        <!-- Background Elements -->
+        <div class="background-elements">
+            <div class="floating-circle circle-1"></div>
+            <div class="floating-circle circle-2"></div>
+            <div class="floating-circle circle-3"></div>
+            <div class="floating-circle circle-4"></div>
+        </div>
+
+        <!-- Header Section -->
+        <header class="header">
+            <div class="logo">
+                <h1>Brizitrix</h1>
+                <p class="tagline">Innovation in Progress</p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="coming-soon-section">
+                <h2 class="main-title">We Are Coming Soon</h2>
+                <p class="subtitle">Something amazing is on the way! The Brizitrix team is working hard to bring you an incredible experience.</p>
+                
+                <!-- Countdown Timer -->
+                <div class="countdown-container">
+                    <h3>Launch in:</h3>
+                    <div class="countdown-timer">
+                        <div class="time-unit">
+                            <span id="days" class="time-value">00</span>
+                            <span class="time-label">Days</span>
+                        </div>
+                        <div class="time-unit">
+                            <span id="hours" class="time-value">00</span>
+                            <span class="time-label">Hours</span>
+                        </div>
+                        <div class="time-unit">
+                            <span id="minutes" class="time-value">00</span>
+                            <span class="time-label">Minutes</span>
+                        </div>
+                        <div class="time-unit">
+                            <span id="seconds" class="time-value">00</span>
+                            <span class="time-label">Seconds</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Newsletter Signup -->
+                <div class="newsletter-section">
+                    <h3>Get Notified When We Launch</h3>
+                    <div class="newsletter-form">
+                        <input type="email" id="email" placeholder="Enter your email address" required>
+                        <button type="button" onclick="subscribeNewsletter()">Notify Me</button>
+                    </div>
+                    <div id="newsletter-message" class="newsletter-message"></div>
+                </div>
+
+                <!-- Social Media Links -->
+                <div class="social-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link twitter" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link linkedin" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link instagram" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="visitor-stats">
+                <p>Visitors: <span id="visitor-count">0</span></p>
+                <p>You are visitor #<span id="current-visitor">0</span></p>
+            </div>
+            <div class="footer-text">
+                <p>&copy; 2025 Brizitrix Team. All rights reserved.</p>
+                <p class="footer-note">Built with passion and innovation</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
